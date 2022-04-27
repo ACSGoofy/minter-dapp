@@ -7,22 +7,23 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "AcidCat10k";
+const description = "Welcome to the Acid Cat Community! By owning an Acid Cat you'll be helping fund your soon-to-be new favorite animation studio. You'll receive exclusive access to animator interviews, limited merch, a chance to become a voice actor, discounts, and loads more! Don't forget to follow us on Twitter and be on the lookout for our new website dropping this month.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Element" },
+      { name: "Body" },
+      { name: "Accents" },
+      { name: "Whiskers" },
+      { name: "Brows" },
+      { name: "Outline" },
+      { name: "Eyes" },
     ],
   },
 ];
@@ -32,13 +33,13 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 3000,
+  height: 3000,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://discord.io/acidcatstudio", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -49,12 +50,12 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTOPUNKS';
-const CONTRACT_SYMBOL = 'CP';
+const CONTRACT_NAME = 'AcidCat10k';
+const CONTRACT_SYMBOL = 'AC10k';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const TREASURY_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const OWNER_ADDRESS = '0xE1AA4f59a50bEe336E1005D9318daF1469cA7939';
+const TREASURY_ADDRESS = '0xE1AA4f59a50bEe336E1005D9318daF1469cA7939';
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 1; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
