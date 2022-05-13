@@ -1,5 +1,5 @@
-const contractAddress = "0xe01a529FbF5EFB1708C2D223E2EE33d3fC977514"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const contractAddress = "0x7DBd1F5364Ba2834a3B3255597e7A080227763C8"; //Replace with your own contract address
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Acid Cat NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
